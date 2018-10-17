@@ -82,7 +82,7 @@ def googleSearch(tv_series) :
 	query = "imdb tv series : " + tv_series
 	 
 	#links : Links of the pages displayed after performing google search. 
-	links = list(search(query, tld="co.in", num=3, stop=1, pause=2))  
+	links = list(search(query, tld="co.in", num=1, stop=1, pause=4.0))  
 
 	#links[0] : first link of the page(Google search generally gives the desired result on first link)
 	return links[0]	
