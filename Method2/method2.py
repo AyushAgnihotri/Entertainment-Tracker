@@ -24,7 +24,7 @@ def add_user_data(Email, Tv_series) :
 
 	try: 
 		#Establishing connection with the database server. 
-		db_connection= MySQLdb.connect(host="localhost",port=3306,user="root",passwd="8687",db="imdb")
+		db_connection= MySQLdb.connect(host="139.59.91.20",port=3306,user="root",passwd="agnihotri987",db="imdb")
 	except: 
 		print("Can't connect to database") 
 		return 0
@@ -54,7 +54,7 @@ def get_tv_series_list(email) :
 	:return : returns the string consisting of TV series subscribed for user with that Email address"""
 	try:
 		#Establishing connection with the database server.
-		db_connection= MySQLdb.connect(host="localhost",port=3306,user="root",passwd="8687",db="imdb") 
+		db_connection= MySQLdb.connect(host="139.59.91.20",port=3306,user="root",passwd="agnihotri987",db="imdb") 
 	except: 
 		print("Can't connect to database") 
 		return 0
