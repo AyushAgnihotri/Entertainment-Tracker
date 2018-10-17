@@ -24,6 +24,10 @@ Keep track of your favourite TV-series and always stay updated with latest infor
 
 ## Usage
 
+First clone the repository.
+
+` git clone https://github.com/AyushAgnihotri/Entertainment-tracker.git`
+
 ##### For approach-1 :
 ###### Navigate to [Entertainment-tracker/Approach1/](https://github.com/AyushAgnihotri/Entertainment-tracker/tree/master/Approach1)
 
