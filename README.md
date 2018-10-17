@@ -48,7 +48,7 @@ The user details are stored in MySQL database as :
 
  `imdb.user_table(email, tv_series)`
 
-######## Note : Database has been hosted over a DigitalOcean Droplet (139.59.91.20:3306) which is accessible publicly.
+###### Note : Database has been hosted over a DigitalOcean Droplet (139.59.91.20:3306) which is accessible publicly.
 
 To view the user details, connect with mysql database :
 
