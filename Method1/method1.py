@@ -20,7 +20,7 @@ def add_user_data(Email, Tv_series) :
 
 	try: 
 		#Establishing connection with the database server. 
-		db_connection= MySQLdb.connect(host="localhost",port=3306,user="root",passwd="8687",db="imdb")
+		db_connection= MySQLdb.connect(host="139.59.91.20",port=3306,user="root",passwd="agnihotri987",db="imdb")
 	except: 
 		print("Can't connect to database") 
 		return 0
@@ -43,37 +43,12 @@ def add_user_data(Email, Tv_series) :
 	db_connection.close()
 
 
-def get_tv_series_list(email) :
-	"""This method returns the TV series for which updates are subscibed for a particular email address.
-	:param email : Email address of user.
-	:return : returns the string consisting of TV series subscribed for user with that Email address"""
-	try:
-		#Establishing connection with the database server.
-		db_connection= MySQLdb.connect(host="localhost",port=3306,user="root",passwd="8687",db="imdb") 
-	except: 
-		print("Can't connect to database") 
-		return 0
-
-	#cursor created
-	cursor=db_connection.cursor() 
-
-	#query executed
-	cursor.execute("SELECT tv_series FROM imdb.user_table WHERE email=%s;",(email,))
-
-	#Output of query stored in list
-	m = cursor.fetchone()  
-	
-	#connection closed
-	db_connection.close() 
-	
-	return m;
-
 
 def findTitleId(tv_series_name):
 	"""This method return the hashed TitleId of the TV series by searching in imdb dataset"""
 	#Trying to connect  
 	try: 
-		db_connection= MySQLdb.connect(host="localhost",port=3306,user="root",passwd="8687",db="imdb") 
+		db_connection= MySQLdb.connect(host="139.59.91.20",port=3306,user="root",passwd="agnihotri987",db="imdb") 
 	# If connection is not successful 
 	except: 
 		print("Can't connect to database") 
