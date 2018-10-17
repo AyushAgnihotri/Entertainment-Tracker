@@ -318,7 +318,7 @@ def main() :
 		print(EmailId)
 		print(msg)
 
-		#send_email(EmailId, msg)
+		send_email(EmailId, msg)
 
 if __name__ == '__main__':
 	main()
